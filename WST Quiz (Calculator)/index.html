@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator</h1>
+        <br>
+
+        <input type="text" id="answer">
+        <br>
+        <div class="operation">
+            <input type="button" value="+" onclick="display('+')">
+            <input type="button"  value="-" onclick="display('-')">
+            <input type="button"  value="x" onclick="display('*')">
+            <input type="button" value="%" onclick="display('/')">
+            <button id="btn" onclick="calculate()">=</button>
+        </div>
+        <br>
+        <input type="button" value="1" onclick="display('1')">
+        <input type="button" value="2" onclick="display('2')">
+        <input type="button" value="3" onclick="display('3')">
+        <br>
+        <input type="button" value="4" onclick="display('4')">
+        <input type="button" value="5" onclick="display('5')">
+        <input type="button" value="6" onclick="display('6')">
+        <br>
+        <input type="button" value="7" onclick="display('7')">
+        <input type="button" value="8" onclick="display('8')">
+        <input type="button" value="9" onclick="display('9')">
+        <br>
+        <input type="button" value="0" onclick="display('0')">
+        <br>
+        <p>Note: having 2 operators side by side does not work (Ex. ++)</p>
+        <p>Note: Do NOT use 0 as the second number when dividing (Ex. 10/0)</p>
+        <p style="color: rgb(156, 138, 172);">Banaynal, Jabez Michael S.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
